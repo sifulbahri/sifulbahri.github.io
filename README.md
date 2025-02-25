@@ -1,7 +1,5 @@
 # 💻 Siful Bahri — Cybersecurity Portfolio
 
-![Cybersecurity Banner](https://source.unsplash.com/1600x400/?cybersecurity,technology)
-
 ## 🧑‍💻 About Me
 Hi! I’m **Siful Bahri**, a highly motivated and detail-oriented cybersecurity professional based in Jakarta, Indonesia. I specialize in network security, penetration testing, and vulnerability management. My passion lies in safeguarding organizational assets by ensuring their confidentiality, integrity, and availability. I thrive on identifying and mitigating security risks and collaborating with teams to enforce best practices. Currently pursuing my BSc in Computer Science and always eager to learn and grow in the cybersecurity space.
 
