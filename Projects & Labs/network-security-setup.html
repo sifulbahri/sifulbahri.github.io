@@ -1,23 +1,43 @@
-# 🛡️ Network Security Setup Documentation
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Network Security Setup Documentation</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4; color: #333; }
+    h1, h2, h3 { color: #0056b3; }
+    .container { max-width: 800px; margin: 50px auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
+    code { background: #eee; padding: 2px 5px; border-radius: 4px; }
+    pre { background: #eee; padding: 10px; border-radius: 4px; overflow-x: auto; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🛡️ Network Security Setup Documentation</h1>
 
-## 📖 Project Overview
-The **Network Security Setup** project focuses on designing and implementing robust security measures to safeguard enterprise network infrastructure. This project simulates real-world network environments to test and validate security policies, intrusion prevention systems, and attack mitigation strategies.
+    <h2>📖 Project Overview</h2>
+    <p>The <strong>Network Security Setup</strong> project focuses on designing and implementing robust security measures to safeguard enterprise network infrastructure. This project simulates real-world network environments to test and validate security policies, intrusion prevention systems, and attack mitigation strategies.</p>
 
-## 🎯 Objectives
-- Ensure network data confidentiality, integrity, and availability.
-- Implement and manage industry-standard firewalls and security protocols.
-- Detect and mitigate unauthorized access and potential cyber threats.
-- Simulate attack scenarios to assess network resilience.
+    <h2>🎯 Objectives</h2>
+    <ul>
+      <li>Ensure network data confidentiality, integrity, and availability.</li>
+      <li>Implement and manage industry-standard firewalls and security protocols.</li>
+      <li>Detect and mitigate unauthorized access and potential cyber threats.</li>
+      <li>Simulate attack scenarios to assess network resilience.</li>
+    </ul>
 
-## 🛠️ Tools & Technologies
-- **Firewalls**: Palo Alto Networks, Fortinet
-- **Intrusion Detection/Prevention**: Snort, Suricata
-- **Network Monitoring**: Wireshark, Splunk
-- **Penetration Testing**: NMAP, Metasploit
-- **Protocol Analysis**: TCP/IP, UDP, ICMP
+    <h2>🛠️ Tools & Technologies</h2>
+    <ul>
+      <li><strong>Firewalls:</strong> Palo Alto Networks, Fortinet</li>
+      <li><strong>Intrusion Detection/Prevention:</strong> Snort, Suricata</li>
+      <li><strong>Network Monitoring:</strong> Wireshark, Splunk</li>
+      <li><strong>Penetration Testing:</strong> NMAP, Metasploit</li>
+      <li><strong>Protocol Analysis:</strong> TCP/IP, UDP, ICMP</li>
+    </ul>
 
-## 🗂️ Project Structure
-```
+    <h2>🗂️ Project Structure</h2>
+    <pre>
 Network-Security-Setup/
 |-- configurations/
 |   |-- firewall_rules.paloalto
@@ -32,53 +52,68 @@ Network-Security-Setup/
 |   |-- setup_firewall.sh
 |   |-- monitor_traffic.py
 |-- README.md
-```
+    </pre>
 
-## 🔍 Implementation Details
-### 1. Firewall Configuration
-- **Palo Alto Networks**: Configured security policies to block unauthorized IPs and suspicious traffic.
-- **Fortinet**: Applied granular filtering and VPN security settings.
+    <h2>🔍 Implementation Details</h2>
+    <h3>1. Firewall Configuration</h3>
+    <ul>
+      <li><strong>Palo Alto Networks:</strong> Configured security policies to block unauthorized IPs and suspicious traffic.</li>
+      <li><strong>Fortinet:</strong> Applied granular filtering and VPN security settings.</li>
+    </ul>
 
-### 2. Intrusion Detection & Prevention
-- Deployed **Snort** to monitor live network traffic and detect intrusion attempts.
-- Configured **Suricata** to prevent identified threats in real-time.
+    <h3>2. Intrusion Detection & Prevention</h3>
+    <ul>
+      <li>Deployed <strong>Snort</strong> to monitor live network traffic and detect intrusion attempts.</li>
+      <li>Configured <strong>Suricata</strong> to prevent identified threats in real-time.</li>
+    </ul>
 
-### 3. Attack Simulation
-- Simulated DDoS and port scanning attacks using **Metasploit** and **NMAP**.
-- Analyzed network resilience and response time to cyber threats.
+    <h3>3. Attack Simulation</h3>
+    <ul>
+      <li>Simulated DDoS and port scanning attacks using <strong>Metasploit</strong> and <strong>NMAP</strong>.</li>
+      <li>Analyzed network resilience and response time to cyber threats.</li>
+    </ul>
 
-### 4. Traffic Analysis
-- Captured and analyzed network packets using **Wireshark**.
-- Identified unusual patterns and potential security breaches.
+    <h3>4. Traffic Analysis</h3>
+    <ul>
+      <li>Captured and analyzed network packets using <strong>Wireshark</strong>.</li>
+      <li>Identified unusual patterns and potential security breaches.</li>
+    </ul>
 
-## 📊 Results & Reports
-- **Attack Simulation Report**: Detailed findings on network performance under attack.
-- **Network Security Audit**: Comprehensive assessment of firewall and IDS/IPS configurations.
+    <h2>📊 Results & Reports</h2>
+    <ul>
+      <li><strong>Attack Simulation Report:</strong> Detailed findings on network performance under attack.</li>
+      <li><strong>Network Security Audit:</strong> Comprehensive assessment of firewall and IDS/IPS configurations.</li>
+    </ul>
 
-## 🚀 How to Run the Setup
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/network-security-setup.git
-```
-2. Navigate to the project directory:
-```bash
-cd network-security-setup
-```
-3. Run the firewall setup script:
-```bash
-bash scripts/setup_firewall.sh
-```
-4. Start traffic monitoring:
-```bash
-python3 scripts/monitor_traffic.py
-```
+    <h2>🚀 How to Run the Setup</h2>
+    <ol>
+      <li>Clone the repository:
+        <pre><code>git clone https://github.com/yourusername/network-security-setup.git</code></pre>
+      </li>
+      <li>Navigate to the project directory:
+        <pre><code>cd network-security-setup</code></pre>
+      </li>
+      <li>Run the firewall setup script:
+        <pre><code>bash scripts/setup_firewall.sh</code></pre>
+      </li>
+      <li>Start traffic monitoring:
+        <pre><code>python3 scripts/monitor_traffic.py</code></pre>
+      </li>
+    </ol>
 
-## 📝 Future Enhancements
-- Integrate cloud-based security monitoring tools.
-- Implement zero-trust network architecture.
-- Automate security audits with CI/CD pipelines.
+    <h2>📝 Future Enhancements</h2>
+    <ul>
+      <li>Integrate cloud-based security monitoring tools.</li>
+      <li>Implement zero-trust network architecture.</li>
+      <li>Automate security audits with CI/CD pipelines.</li>
+    </ul>
 
-## 🗨️ Contact
-For questions or collaboration opportunities:
-📧 **sifulbahri.14@gmail.com**  
-🔗 **[LinkedIn](https://linkedin.com/in/sifulbahri)**
+    <h2>🗨️ Contact</h2>
+    <p>For questions or collaboration opportunities:</p>
+    <ul>
+      <li>📧 <strong>sifulbahri.14@gmail.com</strong></li>
+      <li>🔗 <a href="https://linkedin.com/in/sifulbahri">LinkedIn Profile</a></li>
+    </ul>
+  </div>
+</body>
+</html>
