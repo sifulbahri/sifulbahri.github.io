@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | CyberSec Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-cyber-bg text-cyber-text font-mono overflow-x-hidden relative">
+    
+    <div class="scanline"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-cyber-bg/90 backdrop-blur-md border-b border-cyber-surface">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-cyber-green glitch-hover">SEC_OPS</a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="/" class="hover:text-cyber-green transition-colors">HOME</a>
+                <a href="/about.html" class="hover:text-cyber-green transition-colors">ABOUT</a>
+                <a href="/portfolio.html" class="text-cyber-green border-b-2 border-cyber-green pb-1">PORTFOLIO</a>
+                <a href="/contact.html" class="hover:text-cyber-green transition-colors">CONTACT</a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-cyber-green focus:outline-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cyber-surface border-b border-cyber-blue">
+            <div class="px-6 py-4 flex flex-col space-y-4">
+                <a href="/" class="hover:text-cyber-green">HOME</a>
+                <a href="/about.html" class="hover:text-cyber-green">ABOUT</a>
+                <a href="/portfolio.html" class="text-cyber-green font-bold">PORTFOLIO</a>
+                <a href="/contact.html" class="hover:text-cyber-green">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 container mx-auto px-6">
+        <h1 class="text-4xl font-bold mb-2 glitch-hover">OPERATION_LOGS</h1>
+        <p class="text-cyber-text/60 mb-12 max-w-2xl">Declassified case studies and technical projects demonstrating capabilities in network defense, malware analysis, and system hardening.</p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- Project 1 -->
+            <article class="cyber-card group h-full flex flex-col">
+                <div class="relative overflow-hidden h-48 mb-6 rounded-sm border-b border-cyber-blue">
+                    <img src="/assets/img/project-1.png" alt="Threat Map Dashboard" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute top-2 right-2 bg-cyber-surface/90 px-2 py-1 text-xs border border-cyber-warning text-cyber-warning font-bold">CRITICAL</div>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyber-green transition-colors">Enterprise Threat Dashboard</h3>
+                <p class="text-sm text-cyber-text/70 mb-4 flex-grow">
+                    Designed and implemented a real-time SIEM dashboard integrating logs from 500+ endpoints. Reduced incident response time by 40%.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="text-xs border border-gray-700 px-2 py-1 rounded-sm">Splunk</span>
+                    <span class="text-xs border border-gray-700 px-2 py-1 rounded-sm">Python</span>
+                    <span class="text-xs border border-gray-700 px-2 py-1 rounded-sm">API Integration</span>
+                </div>
+                <a href="#" class="text-sm text-cyber-accent hover:text-white flex items-center mt-auto">
+                    VIEW_CASE_STUDY <span class="ml-2">→</span>
+                </a>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="cyber-card group h-full flex flex-col">
+                <div class="relative overflow-hidden h-48 mb-6 rounded-sm border-b border-cyber-blue">
+                    <img src="/assets/img/project-2.png" alt="Code Analysis" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute top-2 right-2 bg-cyber-surface/90 px-2 py-1 text-xs border border-cyber-green text-cyber-green font-bold">SECURE</div>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyber-green transition-colors">Automated Malware Sandbox</h3>
+                <p class="text-sm text-cyber-text/70 mb-4 flex-grow">
+                    Built an isolated environment for safe detonation and analysis of suspicious binaries using Cuckoo Sandbox and custom Python scripts.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="text-xs border border-gray-700 px-2 py-1 rounded-sm">Python</span>
+                    <span class="text-xs border border-gray-700 px-2 py-1 rounded-sm">VirtualBox</span>
+                    <span class="text-xs border border-gray-700 px-2 py-1 rounded-sm">Bash</span>
+                </div>
+                <a href="#" class="text-sm text-cyber-accent hover:text-white flex items-center mt-auto">
+                    VIEW_SOURCE <span class="ml-2">→</span>
+                </a>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="cyber-card group h-full flex flex-col">
+                <div class="relative overflow-hidden h-48 mb-6 rounded-sm border-b border-cyber-blue">
+                    <img src="/assets/img/project-3.png" alt="Network Topology" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute top-2 right-2 bg-cyber-surface/90 px-2 py-1 text-xs border border-cyber-accent text-cyber-accent font-bold">INFRA</div>
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyber-green transition-colors">Zero Trust Architecture</h3>
+                <p class="text-sm text-cyber-text/70 mb-4 flex-grow">
+                    Redesigned network segmentation for a fintech client, implementing Zero Trust principles and micro-segmentation policies.
+                </p>
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="text-xs border border-gray-700 px-2 py-1 rounded-sm">Network Arch</span>
+                    <span class="text-xs border border-gray-700 px-2 py-1 rounded-sm">Firewalls</span>
+                    <span class="text-xs border border-gray-700 px-2 py-1 rounded-sm">Identity</span>
+                </div>
+                <a href="#" class="text-sm text-cyber-accent hover:text-white flex items-center mt-auto">
+                    VIEW_BLUEPRINT <span class="ml-2">→</span>
+                </a>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-cyber-bg border-t border-cyber-surface py-8">
+        <div class="container mx-auto px-6 text-center md:text-left">
+            <div class="text-cyber-text/50 text-sm">
+                &copy; 2025 SEC_OPS. All Systems Secure.
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>

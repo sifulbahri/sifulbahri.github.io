@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Secure Channel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-cyber-bg text-cyber-text font-mono overflow-x-hidden relative">
+    
+    <div class="scanline"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-cyber-bg/90 backdrop-blur-md border-b border-cyber-surface">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold text-cyber-green glitch-hover">SEC_OPS</a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="/" class="hover:text-cyber-green transition-colors">HOME</a>
+                <a href="/about.html" class="hover:text-cyber-green transition-colors">ABOUT</a>
+                <a href="/portfolio.html" class="hover:text-cyber-green transition-colors">PORTFOLIO</a>
+                <a href="/contact.html" class="text-cyber-green border-b-2 border-cyber-green pb-1">CONTACT</a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-cyber-green focus:outline-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cyber-surface border-b border-cyber-blue">
+            <div class="px-6 py-4 flex flex-col space-y-4">
+                <a href="/" class="hover:text-cyber-green">HOME</a>
+                <a href="/about.html" class="hover:text-cyber-green">ABOUT</a>
+                <a href="/portfolio.html" class="hover:text-cyber-green">PORTFOLIO</a>
+                <a href="/contact.html" class="text-cyber-green font-bold">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-32 pb-20 container mx-auto px-6">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-bold mb-2 glitch-hover text-center">ESTABLISH_UPLINK</h1>
+            <p class="text-cyber-text/60 mb-12 text-center">Secure communication channel initialized. Transmission is encrypted.</p>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="cyber-card">
+                        <h3 class="text-xl font-bold text-white mb-4 border-b border-gray-800 pb-2">COMMUNICATION_CHANNELS</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-sm bg-cyber-surface border border-cyber-blue flex items-center justify-center mr-4 text-cyber-green">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-cyber-text/50 uppercase">Email Protocol</div>
+                                    <div class="text-white hover:text-cyber-green cursor-pointer">secure@secops.dev</div>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <div class="w-10 h-10 rounded-sm bg-cyber-surface border border-cyber-blue flex items-center justify-center mr-4 text-cyber-accent">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-cyber-text/50 uppercase">Base of Operations</div>
+                                    <div class="text-white">San Francisco, CA (Remote)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-6 border border-cyber-warning/30 bg-cyber-warning/5 rounded-sm">
+                        <div class="flex items-start">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-cyber-warning mr-3 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                            </svg>
+                            <div>
+                                <h4 class="text-cyber-warning font-bold mb-1">SECURITY NOTICE</h4>
+                                <p class="text-xs text-cyber-text/80 leading-relaxed">
+                                    Please do not transmit sensitive PII, passwords, or classified material through this public channel. Use PGP key for encrypted communication requests.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <form id="contact-form" class="cyber-card space-y-6">
+                    <div>
+                        <label for="name" class="block text-xs font-bold text-cyber-green uppercase mb-2">Identify Agent</label>
+                        <input type="text" id="name" class="cyber-input rounded-sm" placeholder="Enter Name / Handle" required>
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-xs font-bold text-cyber-green uppercase mb-2">Return Address</label>
+                        <input type="email" id="email" class="cyber-input rounded-sm" placeholder="email@domain.com" required>
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-xs font-bold text-cyber-green uppercase mb-2">Transmission Data</label>
+                        <textarea id="message" rows="5" class="cyber-input rounded-sm" placeholder="Enter your message..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full cyber-btn mt-4 group relative overflow-hidden">
+                        <span class="relative z-10">TRANSMIT MESSAGE</span>
+                        <div class="absolute inset-0 bg-cyber-green transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 origin-left z-0"></div>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-cyber-bg border-t border-cyber-surface py-8">
+        <div class="container mx-auto px-6 text-center md:text-left">
+            <div class="text-cyber-text/50 text-sm">
+                &copy; 2025 SEC_OPS. All Systems Secure.
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>
