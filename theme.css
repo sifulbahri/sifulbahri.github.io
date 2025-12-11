@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyber-green: #00FF41;
+  --color-cyber-blue: #0A0E27;
+  --color-cyber-bg: #0D1117;
+  --color-cyber-surface: #161B22;
+  --color-cyber-accent: #58A6FF;
+  --color-cyber-warning: #F85149;
+  --color-cyber-text: #C9D1D9;
+
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-cyber-bg text-cyber-text font-mono antialiased;
+    background-image: radial-gradient(circle at 50% 50%, #161B22 0%, #0D1117 100%);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-cyber-green;
+  }
+  
+  a {
+    @apply transition-colors duration-200 ease-in-out hover:text-cyber-accent;
+  }
+}
