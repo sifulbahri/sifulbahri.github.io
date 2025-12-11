@@ -12,6 +12,12 @@
   --font-mono: "JetBrains Mono", monospace;
 }
 
+body {
+  background: var(--color-cyber-bg);
+  color: var(--color-cyber-text);
+  font-family: var(--font-mono);
+}
+
 .hero {
     padding: 120px 40px;
     max-width: 100%;
