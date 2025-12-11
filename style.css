@@ -1,3 +1,36 @@
+.hero {
+    padding: 120px 40px;
+    max-width: 900px;
+
+    /* BACKGROUND IMAGE */
+    background-image: url("images/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 8px; /* optional */
+    position: relative;
+}
+
+/* Optional dark overlay for readability */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(1px);
+    z-index: 0;
+}
+
+/* Ensure the hero content appears ABOVE the overlay */
+.hero * {
+    position: relative;
+    z-index: 1;
+}
+
 /* ---------------------------------------------
    GLOBAL
 --------------------------------------------- */
