@@ -235,3 +235,55 @@ footer {
     font-weight: bold;
     margin-top: 10px;
 }
+
+/* PAGE HEADER */
+.page-header {
+    text-align: center;
+    padding: 70px 30px 30px;
+}
+
+.page-header h1 {
+    font-size: 42px;
+    color: #4fb3ff;
+}
+
+.page-header p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #d6e2ff;
+}
+
+/* PORTFOLIO GRID */
+.portfolio-grid {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 25px;
+}
+
+.portfolio-card {
+    background: #111522;
+    border: 1px solid #1e2a4a;
+    padding: 25px;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.portfolio-card:hover {
+    border-color: #4fb3ff;
+    transform: translateY(-4px);
+}
+
+.portfolio-card h3 {
+    color: #4fb3ff;
+    margin-bottom: 15px;
+}
+
+.portfolio-card p {
+    margin-bottom: 15px;
+    color: #c8d7ff;
+}
+
+.portfolio-card ul {
+    padding-left: 20px;
+}
