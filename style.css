@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
 .hero {
     padding: 120px 40px;
     max-width: 100%;
@@ -37,7 +39,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "JetBrains Mono", monospace;
     background: #0b0e16;
     color: #d6e2ff;
     overflow-x: hidden;
