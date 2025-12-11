@@ -8,9 +8,10 @@
 </head>
 
 <body>
+
     <!-- NAVIGATION -->
     <nav class="navbar">
-        <div class="logo">SEC_OPS</div>
+        <div class="logo cyber-glow">SEC_OPS</div>
         <ul>
             <li><a class="active" href="index.html">HOME</a></li>
             <li><a href="about.html">ABOUT</a></li>
@@ -19,29 +20,41 @@
         </ul>
     </nav>
 
-    <!-- HERO -->
+    <!-- HERO SECTION -->
     <section class="hero">
-        <p class="status">STATUS: ONLINE</p>
 
-        <h1>DEFENDING<br>THE<br>DIGITAL FRONTIER</h1>
+        <p class="status cyber-glow">STATUS: ONLINE</p>
 
-        <p class="subtitle">
-            SOC Analyst | Blue Team | Threat Hunter<br>
+        <!-- Main Title (Typing Effect Enabled) -->
+        <h1 class="typing-text">
+            DEFENDING THE DIGITAL FRONTIER
+        </h1>
+
+        <!-- Optional: Glitch Effect Version -->
+        <!-- 
+        <h1 class="glitch" data-text="DEFENDING THE DIGITAL FRONTIER">
+            DEFENDING THE DIGITAL FRONTIER
+        </h1>
+        -->
+
+        <p class="subtitle flicker">
+            SOC Analyst | Blue Team | Threat Hunter <br>
             Specializing in threat detection, incident response, and proactive security architecture.
         </p>
 
         <div class="hero-buttons">
-            <a href="portfolio.html" class="btn">VIEW OPERATIONS</a>
-            <a href="contact.html" class="btn-outline">INITIATE CONTACT</a>
+            <a href="portfolio.html" class="btn cyber-btn">VIEW OPERATIONS</a>
+            <a href="contact.html" class="btn-outline cyber-btn-outline">INITIATE CONTACT</a>
         </div>
 
-        <div class="system-box">
+        <!-- SYSTEM INFO BOX -->
+        <div class="system-box flicker">
             <div>
-                <h4>THREAT LEVEL</h4>
+                <h4 class="cyber-glow">THREAT LEVEL</h4>
                 <span class="value">ELEVATED</span>
             </div>
             <div>
-                <h4>SYSTEM UPTIME</h4>
+                <h4 class="cyber-glow">SYSTEM UPTIME</h4>
                 <span class="value">99.999%</span>
             </div>
         </div>
@@ -49,11 +62,12 @@
 
     <!-- SKILLS SECTION -->
     <section class="skills">
-        <h2>CORE COMPETENCIES</h2>
+        <h2 class="cyber-glow">CORE COMPETENCIES</h2>
 
         <div class="skills-grid">
-            <div class="skill-card">
-                <h3>Incident Response</h3>
+
+            <div class="skill-card flicker">
+                <h3 class="cyber-glow">Incident Response</h3>
                 <ul>
                     <li>Malware Analysis</li>
                     <li>Forensic Triage</li>
@@ -61,8 +75,8 @@
                 </ul>
             </div>
 
-            <div class="skill-card">
-                <h3>Threat Intelligence</h3>
+            <div class="skill-card flicker">
+                <h3 class="cyber-glow">Threat Intelligence</h3>
                 <ul>
                     <li>IOC Tracking</li>
                     <li>Dark Web Monitoring</li>
@@ -70,14 +84,15 @@
                 </ul>
             </div>
 
-            <div class="skill-card">
-                <h3>Vulnerability Mgmt</h3>
+            <div class="skill-card flicker">
+                <h3 class="cyber-glow">Vulnerability Mgmt</h3>
                 <ul>
                     <li>Pen Testing Support</li>
                     <li>Risk Assessment</li>
                     <li>Compliance Auditing</li>
                 </ul>
             </div>
+
         </div>
     </section>
 
@@ -90,6 +105,18 @@
             <a href="#">PGP KEY</a>
         </div>
     </footer>
+
+    <!-- OPTIONAL JavaScript (switch typing to glitch after animation) -->
+    <script>
+        // Uncomment to switch from typing → glitch automatically
+        /*
+        const typing = document.querySelector('.typing-text');
+        setTimeout(() => {
+            typing.style.display = 'none';
+            document.querySelector('.glitch').style.display = 'block';
+        }, 3500);
+        */
+    </script>
 
 </body>
 </html>
