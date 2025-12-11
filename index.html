@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSec Portfolio | Blue Team Specialist</title>
+    <meta name="description" content="Professional portfolio of a cybersecurity analyst specializing in SOC, Blue Team operations, and Threat Intelligence.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Tailwind will be injected by Vite via the module script import -->
+  <script type="module" crossorigin src="./assets/index-BmwGeM5U.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CeucSkji.css">
+</head>
+<body class="bg-cyber-bg text-cyber-text font-mono overflow-x-hidden relative">
+    
+    <div class="scanline"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-cyber-bg/90 backdrop-blur-md border-b border-cyber-surface">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-cyber-green glitch-hover" data-text="SEC_OPS">SEC_OPS</a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-cyber-green border-b-2 border-cyber-green pb-1">HOME</a>
+                <a href="about.html" class="hover:text-cyber-green transition-colors">ABOUT</a>
+                <a href="portfolio.html" class="hover:text-cyber-green transition-colors">PORTFOLIO</a>
+                <a href="contact.html" class="hover:text-cyber-green transition-colors">CONTACT</a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-cyber-green focus:outline-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cyber-surface border-b border-cyber-blue">
+            <div class="px-6 py-4 flex flex-col space-y-4">
+                <a href="/" class="text-cyber-green font-bold">HOME</a>
+                <a href="/about.html" class="hover:text-cyber-green">ABOUT</a>
+                <a href="/portfolio.html" class="hover:text-cyber-green">PORTFOLIO</a>
+                <a href="/contact.html" class="hover:text-cyber-green">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Background Image overlay -->
+        <div class="absolute inset-0 z-0 opacity-20">
+            <img src="./assets/hero-bg-BHcocC70.png" alt="Matrix Code Background" class="w-full h-full object-cover">
+        </div>
+        
+        <div class="container mx-auto px-6 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1">
+                <div class="inline-block px-3 py-1 mb-4 border border-cyber-green/30 rounded-full bg-cyber-green/10 text-cyber-green text-xs tracking-widest">
+                    STATUS: ONLINE
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+                    DEFENDING THE <br>
+                    <span class="text-cyber-accent glitch-hover">DIGITAL FRONTIER</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-cyber-green mb-6 h-8 font-bold">
+                    > <span id="typewriter" data-text="SOC Analyst | Blue Team | Threat Hunter"></span><span class="terminal-cursor"></span>
+                </p>
+                <p class="text-cyber-text/80 mb-8 max-w-lg leading-relaxed">
+                    Specializing in threat detection, incident response, and proactive security architecture. Building resilient systems against modern cyber threats.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="portfolio.html" class="cyber-btn bg-cyber-green/10">
+                        View Operations
+                    </a>
+                    <a href="contact.html" class="cyber-btn border-cyber-accent text-cyber-accent hover:bg-cyber-accent hover:text-cyber-blue">
+                        Initiate Contact
+                    </a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-96 md:h-96">
+                    <div class="absolute inset-0 border-2 border-cyber-green rounded-full animate-pulse opacity-50"></div>
+                    <div class="absolute inset-4 border border-cyber-accent rounded-full opacity-30 animate-spin-slow" style="animation-duration: 10s;"></div>
+                    <img src="./assets/profile-dnSl_Gm4.png" alt="Security Analyst Profile" class="w-full h-full object-cover rounded-full border-4 border-cyber-surface shadow-[0_0_30px_rgba(0,255,65,0.2)]">
+                    
+                    <!-- Floating Data Cards -->
+                    <div class="absolute -right-4 top-10 bg-cyber-surface border border-cyber-green p-3 rounded-sm shadow-lg hidden md:block backdrop-blur-sm bg-opacity-90">
+                        <div class="text-xs text-cyber-green font-bold mb-1">THREAT LEVEL</div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 rounded-full bg-cyber-warning animate-pulse"></div>
+                            <span class="text-sm font-bold">ELEVATED</span>
+                        </div>
+                    </div>
+                    
+                    <div class="absolute -left-8 bottom-20 bg-cyber-surface border border-cyber-accent p-3 rounded-sm shadow-lg hidden md:block backdrop-blur-sm bg-opacity-90">
+                        <div class="text-xs text-cyber-accent font-bold mb-1">SYSTEM UPTIME</div>
+                        <div class="font-mono text-sm">99.999%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Expertise Section -->
+    <section class="py-20 bg-cyber-surface relative border-t border-cyber-blue">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center glitch-hover">CORE_COMPETENCIES</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="cyber-card group">
+                    <div class="mb-4 text-cyber-green">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white group-hover:text-cyber-green transition-colors">Incident Response</h3>
+                    <p class="text-sm text-cyber-text/70 mb-4">Rapid identification, containment, and eradication of security threats. Detailed forensic analysis and post-incident reporting.</p>
+                    <ul class="text-xs space-y-2 text-cyber-text/60 font-mono">
+                        <li class="flex items-center"><span class="mr-2 text-cyber-green">></span> Malware Analysis</li>
+                        <li class="flex items-center"><span class="mr-2 text-cyber-green">></span> Forensic Triage</li>
+                        <li class="flex items-center"><span class="mr-2 text-cyber-green">></span> Root Cause Analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="cyber-card group">
+                    <div class="mb-4 text-cyber-accent">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white group-hover:text-cyber-accent transition-colors">Threat Intelligence</h3>
+                    <p class="text-sm text-cyber-text/70 mb-4">Proactive monitoring of threat landscapes. Collecting and analyzing data to anticipate and prevent potential attacks.</p>
+                    <ul class="text-xs space-y-2 text-cyber-text/60 font-mono">
+                        <li class="flex items-center"><span class="mr-2 text-cyber-accent">></span> IOC Tracking</li>
+                        <li class="flex items-center"><span class="mr-2 text-cyber-accent">></span> Dark Web Monitoring</li>
+                        <li class="flex items-center"><span class="mr-2 text-cyber-accent">></span> APT Profiling</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="cyber-card group">
+                    <div class="mb-4 text-cyber-warning">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white group-hover:text-cyber-warning transition-colors">Vulnerability Mgmt</h3>
+                    <p class="text-sm text-cyber-text/70 mb-4">Continuous assessment of systems for weaknesses. Patch management and security hardening strategies.</p>
+                    <ul class="text-xs space-y-2 text-cyber-text/60 font-mono">
+                        <li class="flex items-center"><span class="mr-2 text-cyber-warning">></span> Pen Testing Support</li>
+                        <li class="flex items-center"><span class="mr-2 text-cyber-warning">></span> Risk Assessment</li>
+                        <li class="flex items-center"><span class="mr-2 text-cyber-warning">></span> Compliance Auditing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cyber-bg border-t border-cyber-surface py-8">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="text-cyber-text/50 text-sm mb-4 md:mb-0">
+                &copy; 2025 SEC_OPS. All Systems Secure.
+            </div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-cyber-text/50 hover:text-cyber-green transition-colors">GITHUB</a>
+                <a href="#" class="text-cyber-text/50 hover:text-cyber-accent transition-colors">LINKEDIN</a>
+                <a href="#" class="text-cyber-text/50 hover:text-cyber-warning transition-colors">PGP KEY</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
