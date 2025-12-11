@@ -1,3 +1,328 @@
+/* ---------------------------------------------
+   GLOBAL
+--------------------------------------------- */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0e16;
+    color: #d6e2ff;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+
+/* ---------------------------------------------
+   NAVBAR
+--------------------------------------------- */
+
+.navbar {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #05070d;
+    border-bottom: 1px solid #0d1b3d;
+}
+
+.navbar .logo {
+    font-size: 22px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: #d6e2ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    color: #4fb3ff;
+}
+
+/* ---------------------------------------------
+   HERO SECTION
+--------------------------------------------- */
+
+.hero {
+    padding: 120px 40px;
+    max-width: 900px;
+}
+
+.status {
+    color: #4fb3ff;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+/* Typing Effect */
+.typing-text {
+    width: 36ch;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #4fb3ff;
+    animation: typing 3.5s steps(36), blink .7s step-end infinite;
+    font-size: 56px;
+    line-height: 1.1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* HERO BUTTONS */
+.hero-buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 20px;
+}
+
+/* ---------------------------------------------
+   CYBER BUTTONS
+--------------------------------------------- */
+
+.cyber-btn,
+.cyber-btn-outline {
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+/* Solid Glow Button */
+.cyber-btn {
+    background: #4fb3ff;
+    color: #000;
+    box-shadow: 0 0 8px #4fb3ff;
+}
+
+.cyber-btn:hover {
+    box-shadow: 0 0 16px #4fb3ff, 0 0 32px #4fb3ff;
+}
+
+/* Outline Glow Button */
+.cyber-btn-outline {
+    border: 1px solid #4fb3ff;
+    color: #4fb3ff;
+}
+
+.cyber-btn-outline:hover {
+    background: rgba(79, 179, 255, 0.1);
+    box-shadow: 0 0 16px #4fb3ff;
+}
+
+/* ---------------------------------------------
+   SYSTEM STATUS BOX
+--------------------------------------------- */
+
+.system-box {
+    display: flex;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.system-box h4 {
+    color: #4fb3ff;
+    font-size: 14px;
+}
+
+.system-box .value {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* ---------------------------------------------
+   SKILLS SECTION
+--------------------------------------------- */
+
+.skills {
+    padding: 80px 40px;
+}
+
+.skills h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #4fb3ff;
+}
+
+.skills-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background: #111522;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #1e2a4a;
+    width: 30%;
+}
+
+.skill-card h3 {
+    color: #4fb3ff;
+}
+
+.skill-card ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+/* ---------------------------------------------
+   FOOTER
+--------------------------------------------- */
+
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #05070d;
+    margin-top: 80px;
+    border-top: 1px solid #0d1b3d;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #4fb3ff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* ---------------------------------------------
+   CYBER GLOW TEXT
+--------------------------------------------- */
+
+.cyber-glow {
+    color: #4fb3ff;
+    text-shadow:
+        0 0 5px #4fb3ff,
+        0 0 12px #4fb3ff,
+        0 0 24px #00c6ff;
+    animation: glowPulse 2s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+    0% { text-shadow: 0 0 5px #4fb3ff; }
+    50% {
+        text-shadow:
+            0 0 12px #4fb3ff,
+            0 0 24px #00c6ff,
+            0 0 40px #00c6ff;
+    }
+    100% { text-shadow: 0 0 5px #4fb3ff; }
+}
+
+/* ---------------------------------------------
+   SCREEN FLICKER EFFECT
+--------------------------------------------- */
+
+.flicker {
+    animation: screenFlicker 4s infinite;
+}
+
+@keyframes screenFlicker {
+    0% { opacity: 1; }
+    5% { opacity: 0.8; }
+    6% { opacity: 1; }
+    7% { opacity: 0.6; }
+    8% { opacity: 1; }
+    15% { opacity: 0.9; }
+    16% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+/* ---------------------------------------------
+   GLITCH TEXT EFFECT (OFF BY DEFAULT)
+--------------------------------------------- */
+
+.glitch {
+    position: relative;
+    display: none; /* Turn ON manually if you want */
+    color: #4fb3ff;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.glitch:before,
+.glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.glitch:before {
+    color: #ff00c8;
+    animation: glitch 0.5s infinite;
+}
+
+.glitch:after {
+    color: #00fff2;
+    animation: glitch 0.7s infinite;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(2px, -2px); }
+    60% { transform: translate(-1px, 1px); }
+    80% { transform: translate(1px, -1px); }
+    100% { transform: translate(0, 0); }
+}
+
+/* ---------------------------------------------
+   RESPONSIVE DESIGN
+--------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .skills-grid {
+        flex-direction: column;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .typing-text {
+        font-size: 36px;
+        width: 100%;
+    }
+
+    .system-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
