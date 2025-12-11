@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --color-cyber-green: #00FF41;
+  --color-cyber-blue: #0A0E27;
+  --color-cyber-bg: #0D1117;
+  --color-cyber-surface: #161B22;
+  --color-cyber-accent: #58A6FF;
+  --color-cyber-warning: #F85149;
+  --color-cyber-text: #C9D1D9;
+
+  --font-mono: "JetBrains Mono", monospace;
+}
+
 .hero {
     padding: 120px 40px;
     max-width: 100%;
