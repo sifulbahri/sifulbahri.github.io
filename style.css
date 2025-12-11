@@ -287,3 +287,92 @@ footer {
 .portfolio-card ul {
     padding-left: 20px;
 }
+
+/* CONTACT PAGE */
+.page-header {
+    padding: 80px 40px 40px;
+    text-align: left;
+}
+
+.page-header h1 {
+    font-size: 48px;
+    color: #4fb3ff;
+}
+
+.page-header p {
+    margin-top: 10px;
+    max-width: 600px;
+    font-size: 18px;
+}
+
+.contact-section {
+    display: flex;
+    gap: 50px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-box,
+.contact-details {
+    background: #111522;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #1e2a4a;
+    flex: 1;
+    min-width: 320px;
+}
+
+.contact-box h2,
+.contact-details h2 {
+    color: #4fb3ff;
+}
+
+.contact-subtext {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #9eb9ff;
+}
+
+.contact-form label {
+    margin-top: 15px;
+    display: block;
+    font-size: 14px;
+    color: #9eb9ff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    background: #0b0e16;
+    border: 1px solid #26345c;
+    border-radius: 4px;
+    color: #d6e2ff;
+    font-size: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #4fb3ff;
+    box-shadow: 0 0 8px #4fb3ff50;
+}
+
+.contact-details p {
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.highlight {
+    color: #4fb3ff;
+}
+
+.pgp-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: #0c1120;
+    border: 1px dashed #4fb3ff;
+    border-radius: 6px;
+}
