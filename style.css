@@ -157,3 +157,81 @@ footer {
     text-decoration: none;
     margin: 0 15px;
 }
+
+/* PAGE HEADER */
+.page-header {
+    text-align: center;
+    padding: 80px 20px 40px;
+}
+
+.page-header h1 {
+    font-size: 48px;
+    color: #4fb3ff;
+    letter-spacing: 2px;
+}
+
+.page-subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* ABOUT SECTION */
+.about-section {
+    padding: 60px 40px 100px;
+}
+
+.about-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #4fb3ff;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 17px;
+}
+
+.bullet-list {
+    padding-left: 20px;
+}
+
+.bullet-list li {
+    margin: 8px 0;
+}
+
+/* STATS SECTION */
+.about-stats {
+    flex: 1;
+    display: grid;
+    gap: 20px;
+}
+
+.stat-card {
+    background: #111522;
+    border: 1px solid #1e2a4a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.stat-card h4 {
+    color: #4fb3ff;
+    font-size: 14px;
+}
+
+.stat-value {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 10px;
+}
