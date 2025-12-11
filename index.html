@@ -15,13 +15,33 @@
 
     <!-- NAVIGATION -->
     <nav class="navbar fixed w-full z-50 bg-cyber-bg/90 backdrop-blur-md border-b border-cyber-surface">
-        <a href="index.html" class="text-2xl font-bold text-cyber-green glitch-hover" data-text="SEC_OPS">SEC_OPS</a>
-        <ul>
-            <li><a class="active" href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-cyber-green glitch-hover" data-text="SEC_OPS">SEC_OPS</a>
+
+            <div class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-cyber-green border-b-2 border-cyber-green pb-1">HOME</a>
+                <a href="about.html" class="hover:text-cyber-green transition-colors">ABOUT</a>
+                <a href="portfolio.html" class="hover:text-cyber-green transition-colors">PORTFOLIO</a>
+                <a href="contact.html" class="hover:text-cyber-green transition-colors">CONTACT</a>
+            </div>
+
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-cyber-green focus:outline-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-cyber-surface border-b border-cyber-blue">
+                <div class="px-6 py-4 flex flex-col space-y-4">
+                    <a href="/" class="text-cyber-green font-bold">HOME</a>
+                    <a href="/about.html" class="hover:text-cyber-green">ABOUT</a>
+                    <a href="/portfolio.html" class="hover:text-cyber-green">PORTFOLIO</a>
+                    <a href="/contact.html" class="hover:text-cyber-green">CONTACT</a>
+            </div>
+        </div>
     </nav>
 
     <!-- HERO SECTION -->
