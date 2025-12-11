@@ -1,6 +1,6 @@
 .hero {
     padding: 120px 40px;
-    max-width: 900px;
+    max-width: 100%;
 
     /* BACKGROUND IMAGE */
     background-image: url("images/background.png");
