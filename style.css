@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0e16;
+    color: #d6e2ff;
+}
+
+/* NAVBAR */
+.navbar {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #05070d;
+    border-bottom: 1px solid #0d1b3d;
+}
+
+.navbar .logo {
+    font-size: 22px;
+    letter-spacing: 2px;
+    color: #4fb3ff;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    color: #d6e2ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar a.active,
+.navbar a:hover {
+    color: #4fb3ff;
+}
+
+/* HERO */
+.hero {
+    padding: 120px 40px;
+    text-align: left;
+    max-width: 900px;
+}
+
+.status {
+    color: #4fb3ff;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin: 20px 0;
+    line-height: 1.1;
+}
+
+.subtitle {
+    margin-top: 20px;
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 20px;
+}
+
+.btn,
+.btn-outline {
+    padding: 12px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn {
+    background: #4fb3ff;
+    color: #000;
+}
+
+.btn-outline {
+    border: 1px solid #4fb3ff;
+    color: #4fb3ff;
+}
+
+/* SYSTEM STATUS BOX */
+.system-box {
+    display: flex;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.system-box h4 {
+    color: #4fb3ff;
+    font-size: 14px;
+}
+
+.system-box .value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* SKILLS */
+.skills {
+    padding: 80px 40px;
+}
+
+.skills h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #4fb3ff;
+}
+
+.skills-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background: #111522;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #1e2a4a;
+    width: 30%;
+}
+
+.skill-card h3 {
+    color: #4fb3ff;
+}
+
+.skill-card ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #05070d;
+    margin-top: 80px;
+    border-top: 1px solid #0d1b3d;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #4fb3ff;
+    text-decoration: none;
+    margin: 0 15px;
+}
