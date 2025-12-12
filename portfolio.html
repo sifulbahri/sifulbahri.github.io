@@ -3,110 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | SEC_OPS</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Explore my cybersecurity projects including threat detection systems, incident response playbooks, and security automation tools.">
+    <title>Portfolio | CyberDefender - Security Projects</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">SEC_OPS</div>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a class="active" href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
-
-    <!-- HEADER -->
-    <header class="page-header">
-        <h1>OPERATIONS PORTFOLIO</h1>
-        <p>Selected case studies, investigations, and defensive security work.</p>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-bracket">[</span>CyberDefender<span class="logo-bracket">]</span>
+            </a>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
 
-    <!-- PORTFOLIO GRID -->
-    <section class="portfolio-grid">
-
-        <!-- CARD 1 -->
-        <div class="portfolio-card">
-            <h3>🔍 Incident Response – Ransomware Containment</h3>
-            <p>Led rapid triage and containment for a ransomware intrusion affecting 42 endpoints.</p>
-            <ul>
-                <li>Identified initial foothold via malicious macro document</li>
-                <li>Executed network isolation via EDR API</li>
-                <li>Performed memory forensics (Volatility Framework)</li>
-                <li>Delivered full RCA + prevention plan</li>
-            </ul>
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <p class="breadcrumb"><a href="index.html">~/home</a> / portfolio</p>
+                <h1>Security Projects</h1>
+                <p>A showcase of my cybersecurity work and contributions</p>
+            </div>
         </div>
 
-        <!-- CARD 2 -->
-        <div class="portfolio-card">
-            <h3>🛰 Threat Intelligence – APT Profiling</h3>
-            <p>Tracked and documented activity linked to a suspected APT group targeting finance sector.</p>
-            <ul>
-                <li>Collected IOCs from sandbox detonations</li>
-                <li>Dark web monitoring for compromised credentials</li>
-                <li>Created actionable threat intel report for SOC</li>
-            </ul>
-        </div>
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <p>Hands-on security projects demonstrating threat detection, incident response, and automation expertise</p>
+                </div>
+                <div class="card-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-radar"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>SIEM Detection Lab</h3>
+                            <p>Built a comprehensive home lab environment with Splunk SIEM, configured with custom detection rules for common attack techniques mapped to MITRE ATT&CK framework.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Splunk</span>
+                                <span class="project-tag">MITRE ATT&CK</span>
+                                <span class="project-tag">Detection Engineering</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i> View Code</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Incident Response Playbooks</h3>
+                            <p>Developed comprehensive IR playbooks for common security incidents including ransomware, phishing, and data exfiltration with step-by-step response procedures.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Incident Response</span>
+                                <span class="project-tag">Documentation</span>
+                                <span class="project-tag">NIST</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i> View Code</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>SOAR Automation Scripts</h3>
+                            <p>Python-based automation scripts for common SOC tasks including IOC enrichment, alert triage, and automated ticket creation integrated with TheHive.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Python</span>
+                                <span class="project-tag">Automation</span>
+                                <span class="project-tag">TheHive</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i> View Code</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Malware Analysis Reports</h3>
+                            <p>Collection of detailed malware analysis reports documenting behavior analysis, IOCs extraction, and YARA rules for various malware families.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Malware Analysis</span>
+                                <span class="project-tag">YARA</span>
+                                <span class="project-tag">Reverse Engineering</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i> View Code</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Network Threat Detection</h3>
+                            <p>Zeek-based network monitoring solution with custom scripts for detecting lateral movement, C2 communication, and data exfiltration patterns.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Zeek</span>
+                                <span class="project-tag">Network Security</span>
+                                <span class="project-tag">Threat Hunting</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i> View Code</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Azure Sentinel Workbooks</h3>
+                            <p>Custom Azure Sentinel workbooks and KQL queries for cloud security monitoring, providing visibility into Azure AD, Office 365, and Azure resources.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Azure Sentinel</span>
+                                <span class="project-tag">KQL</span>
+                                <span class="project-tag">Cloud Security</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fab fa-github"></i> View Code</a>
+                                <a href="#"><i class="fas fa-external-link-alt"></i> Documentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- CARD 3 -->
-        <div class="portfolio-card">
-            <h3>🛡 SOC Automation – SIEM Rule Development</h3>
-            <p>Developed detection logic improving SOC efficiency and coverage.</p>
-            <ul>
-                <li>Created Sigma & Elastic detection rules</li>
-                <li>Tuned alert noise by 48%</li>
-                <li>Built enrichment pipelines for VirusTotal & AbuseIPDB</li>
-            </ul>
-        </div>
+        <section class="section" style="background: var(--surface);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>CTF & Training</h2>
+                    <p>Continuous learning through hands-on challenges and platforms</p>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <h3>TryHackMe</h3>
+                        <p>Completed 150+ rooms focusing on blue team operations, threat hunting, and incident response paths. Top 5% globally.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-cube"></i>
+                        </div>
+                        <h3>Hack The Box</h3>
+                        <p>Active participant in SOC challenges and Sherlocks labs, practicing real-world security scenarios and threat investigations.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Blue Team Labs Online</h3>
+                        <p>Completed multiple investigation challenges covering forensics, malware analysis, and threat intelligence.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>CyberDefenders</h3>
+                        <p>Regular practice on blue team CTF challenges focusing on DFIR, threat hunting, and malware analysis scenarios.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- CARD 4 -->
-        <div class="portfolio-card">
-            <h3>📦 Vulnerability Management – Enterprise Hardening</h3>
-            <p>Performed continuous scanning + prioritization across 600+ assets.</p>
-            <ul>
-                <li>Mapped vulnerabilities to MITRE ATT&CK</li>
-                <li>Assisted patch rollout coordination</li>
-                <li>Delivered compliance audit reports</li>
-            </ul>
-        </div>
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Open Source Contributions</h2>
+                    <p>Contributing to the security community through open source projects</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code-branch"></i> Detection Rules</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Sigma Rules</span>
+                            <span class="skill-tag">YARA Rules</span>
+                            <span class="skill-tag">Snort/Suricata</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-book"></i> Documentation</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Playbooks</span>
+                            <span class="skill-tag">Runbooks</span>
+                            <span class="skill-tag">Tutorials</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Security Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python Scripts</span>
+                            <span class="skill-tag">PowerShell Modules</span>
+                            <span class="skill-tag">SIEM Integrations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <!-- CARD 5 -->
-        <div class="portfolio-card">
-            <h3>⚙️ Malware Analysis – Reverse Engineering</h3>
-            <p>Performed static and dynamic analysis on suspicious executables.</p>
-            <ul>
-                <li>Identified persistence mechanisms</li>
-                <li>Extracted C2 endpoints and obfuscated configs</li>
-                <li>Provided YARA rules for future detection</li>
-            </ul>
-        </div>
-
-        <!-- CARD 6 -->
-        <div class="portfolio-card">
-            <h3>📊 Security Monitoring – Dashboard Engineering</h3>
-            <p>Built SOC dashboards for threat visibility & analyst workflow optimization.</p>
-            <ul>
-                <li>SIEM dashboards (Splunk / Elastic / Wazuh)</li>
-                <li>IOC trend analysis visualization</li>
-                <li>Automated weekly reporting</li>
-            </ul>
-        </div>
-
-    </section>
-
-    <!-- FOOTER -->
     <footer>
-        <p>© 2025 SEC_OPS. All Systems Secure.</p>
-        <div class="footer-links">
-            <a href="#">GITHUB</a>
-            <a href="#">LINKEDIN</a>
-            <a href="#">PGP KEY</a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">[CyberDefender]</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CyberDefender. All rights reserved. | Securing the digital frontier</p>
+            </div>
         </div>
     </footer>
 
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
