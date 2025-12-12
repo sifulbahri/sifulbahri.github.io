@@ -3,150 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEC_OPS | Cybersecurity Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta name="description" content="SOC Analyst & Blue Team Security Professional - Protecting digital assets through threat detection, incident response, and security operations.">
+    <title>CyberDefender | SOC Analyst & Blue Team Expert</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
-<body class="bg-cyber-bg text-cyber-text font-mono overflow-x-hidden relative">
-
-    <!-- NAVIGATION -->
-    <nav class="navbar fixed w-full z-50 bg-cyber-bg/90 backdrop-blur-md border-b border-cyber-surface">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-cyber-green glitch-hover" data-text="SEC_OPS">SEC_OPS</a>
-
-            <div class="hidden md:flex space-x-8">
-                <a href="index.html" class="text-cyber-green border-b-2 border-cyber-green pb-1">HOME</a>
-                <a href="about.html" class="hover:text-cyber-green transition-colors">ABOUT</a>
-                <a href="portfolio.html" class="hover:text-cyber-green transition-colors">PORTFOLIO</a>
-                <a href="contact.html" class="hover:text-cyber-green transition-colors">CONTACT</a>
-            </div>
-
-            <div class="md:hidden">
-                <button id="mobile-menu-btn" class="text-cyber-green focus:outline-hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>
-                </button>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-bracket">[</span>CyberDefender<span class="logo-bracket">]</span>
+            </a>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden bg-cyber-surface border-b border-cyber-blue">
-                <div class="px-6 py-4 flex flex-col space-y-4">
-                    <a href="/" class="text-cyber-green font-bold">HOME</a>
-                    <a href="/about.html" class="hover:text-cyber-green">ABOUT</a>
-                    <a href="/portfolio.html" class="hover:text-cyber-green">PORTFOLIO</a>
-                    <a href="/contact.html" class="hover:text-cyber-green">CONTACT</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-terminal">
+                        <div class="terminal-header">
+                            <span class="terminal-dot red"></span>
+                            <span class="terminal-dot yellow"></span>
+                            <span class="terminal-dot green"></span>
+                        </div>
+                        <div class="terminal-content">
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">root@soc:~$</span>
+                                <span class="terminal-command"> whoami</span>
+                            </div>
+                            <div class="terminal-line terminal-output">SOC Analyst | Blue Team Specialist | Threat Hunter</div>
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">root@soc:~$</span>
+                                <span class="terminal-command"> cat mission.txt</span>
+                            </div>
+                            <div class="terminal-line terminal-output">Defending networks. Hunting threats. Securing the future.</div>
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">root@soc:~$</span>
+                                <span class="terminal-command"> status --security</span>
+                            </div>
+                            <div class="terminal-line terminal-output">[+] All systems protected. Threat level: Monitored</div>
+                        </div>
+                    </div>
+                    <h1>Security Operations Center Analyst</h1>
+                    <p class="subtitle">Specializing in <span>Threat Detection</span>, <span>Incident Response</span>, and <span>Security Monitoring</span></p>
+                    <div class="cta-buttons">
+                        <a href="portfolio.html" class="btn btn-primary">
+                            <i class="fas fa-shield-halved"></i> View My Work
+                        </a>
+                        <a href="contact.html" class="btn btn-outline">
+                            <i class="fas fa-terminal"></i> Get In Touch
+                        </a>
+                    </div>
                 </div>
             </div>
-    </nav>
+        </section>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="absolute inset-0 z-0 opacity-20">
-            <img src="images/background.png" alt="Matrix Code Background" class="w-full h-full object-cover">
-        </div>
-
-        <p class="status cyber-glow inline-block px-3 py-1 mb-4 border border-cyber-green/30 rounded-full bg-cyber-green/10 text-cyber-green text-xs tracking-widest">STATUS: ONLINE</p>
-
-        <!-- Main Title (Typing Effect Enabled) -->
-        <!--
-        <h1 class="typing-text">
-            DEFENDING THE DIGITAL FRONTIER
-        </h1>
-        -->
-
-        <!-- Optional: Glitch Effect Version -->
-        <h1 class="glitch" data-text="DEFENDING THE DIGITAL FRONTIER">
-            DEFENDING THE DIGITAL FRONTIER
-        </h1>
-
-        <p class="subtitle flicker">
-            SOC Analyst | Blue Team | Threat Hunter <br>
-            Specializing in threat detection, incident response, and proactive security architecture. Building resilient systems against modern cyber threats.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="portfolio.html" class="btn cyber-btn">VIEW OPERATIONS</a>
-            <a href="contact.html" class="btn-outline cyber-btn-outline">INITIATE CONTACT</a>
-        </div>
-
-        <!-- SYSTEM INFO BOX -->
-        <div class="system-box flicker">
-            <div>
-                <h4 class="cyber-glow">THREAT LEVEL</h4>
-                <span class="value">ELEVATED</span>
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Core Expertise</h2>
+                    <p>Comprehensive security operations capabilities to protect your organization from evolving cyber threats</p>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Threat Detection & Monitoring</h3>
+                        <p>24/7 security monitoring using SIEM platforms, analyzing logs, and identifying potential security incidents before they escalate.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-fire-extinguisher"></i>
+                        </div>
+                        <h3>Incident Response</h3>
+                        <p>Rapid containment and remediation of security incidents, following established IR procedures and documenting findings for post-incident analysis.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-magnifying-glass"></i>
+                        </div>
+                        <h3>Threat Hunting</h3>
+                        <p>Proactive searching for hidden threats using advanced analytics, behavioral analysis, and threat intelligence to stay ahead of adversaries.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Security Analytics</h3>
+                        <p>Data-driven security insights through log analysis, correlation rules, and custom dashboards to improve detection capabilities.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Network Security</h3>
+                        <p>Monitoring network traffic, analyzing packet captures, and implementing defense-in-depth strategies to protect critical infrastructure.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Security Automation</h3>
+                        <p>Developing scripts and playbooks to automate repetitive security tasks, improve response times, and reduce analyst fatigue.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h4 class="cyber-glow">SYSTEM UPTIME</h4>
-                <span class="value">99.999%</span>
+        </section>
+
+        <section class="section" style="background: var(--surface);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Technology Stack</h2>
+                    <p>Tools and technologies I work with daily to defend against cyber threats</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-desktop"></i> SIEM Platforms</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Splunk</span>
+                            <span class="skill-tag">Microsoft Sentinel</span>
+                            <span class="skill-tag">Elastic SIEM</span>
+                            <span class="skill-tag">IBM QRadar</span>
+                            <span class="skill-tag">LogRhythm</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-shield-virus"></i> EDR/XDR</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">CrowdStrike</span>
+                            <span class="skill-tag">Carbon Black</span>
+                            <span class="skill-tag">SentinelOne</span>
+                            <span class="skill-tag">Microsoft Defender</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Scripting & Automation</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">PowerShell</span>
+                            <span class="skill-tag">Bash</span>
+                            <span class="skill-tag">KQL</span>
+                            <span class="skill-tag">SPL</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-network-wired"></i> Network Analysis</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Wireshark</span>
+                            <span class="skill-tag">Zeek</span>
+                            <span class="skill-tag">Suricata</span>
+                            <span class="skill-tag">tcpdump</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-bug"></i> Threat Intelligence</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MITRE ATT&CK</span>
+                            <span class="skill-tag">VirusTotal</span>
+                            <span class="skill-tag">Shodan</span>
+                            <span class="skill-tag">AlienVault OTX</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Forensics & IR</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Volatility</span>
+                            <span class="skill-tag">Autopsy</span>
+                            <span class="skill-tag">KAPE</span>
+                            <span class="skill-tag">Velociraptor</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- SKILLS SECTION -->
-    <section class="skills">
-        <h2 class="cyber-glow">CORE COMPETENCIES</h2>
-
-        <div class="skills-grid">
-
-            <div class="skill-card flicker">
-                <h3 class="cyber-glow">Incident Response</h3>
-                <p>Rapid identification, containment, and eradication of security threats. Detailed forensic analysis and post-incident reporting.</p>
-                <ul>
-                    <li>Malware Analysis</li>
-                    <li>Forensic Triage</li>
-                    <li>Root Cause Analysis</li>
-                </ul>
-            </div>
-
-            <div class="skill-card flicker">
-                <h3 class="cyber-glow">Threat Intelligence</h3>
-                <p>Proactive monitoring of threat landscapes. Collecting and analyzing data to anticipate and prevent potential attacks.</p>
-                <ul>
-                    <li>IOC Tracking</li>
-                    <li>Dark Web Monitoring</li>
-                    <li>APT Profiling</li>
-                </ul>
-            </div>
-
-            <div class="skill-card flicker">
-                <h3 class="cyber-glow">Vulnerability Mgmt</h3>
-                <p>Continuous assessment of systems for weaknesses. Patch management and security hardening strategies.</p>
-                <ul>
-                    <li>Pen Testing Support</li>
-                    <li>Risk Assessment</li>
-                    <li>Compliance Auditing</li>
-                </ul>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- FOOTER -->
     <footer>
-        <p>© 2025 SEC_OPS. All Systems Secure.</p>
-        <div class="footer-links">
-            <a href="#">GITHUB</a>
-            <a href="#">LINKEDIN</a>
-            <a href="#">PGP KEY</a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">[CyberDefender]</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CyberDefender. All rights reserved. | Securing the digital frontier</p>
+            </div>
         </div>
     </footer>
 
-    <!-- OPTIONAL JavaScript (switch typing to glitch after animation) -->
     <script>
-        // Uncomment to switch from typing → glitch automatically
-        /*
-        const typing = document.querySelector('.typing-text');
-        setTimeout(() => {
-            typing.style.display = 'none';
-            document.querySelector('.glitch').style.display = 'block';
-        }, 3500);
-        */
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        }
     </script>
-
 </body>
 </html>
