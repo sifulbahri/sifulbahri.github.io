@@ -3,95 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | SEC_OPS</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Learn about my journey as a SOC Analyst and Blue Team security professional with expertise in threat detection and incident response.">
+    <title>About | CyberDefender - SOC Analyst</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-
-    <!-- NAVIGATION -->
-    <nav class="navbar">
-        <div class="logo">SEC_OPS</div>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a class="active" href="about.html">ABOUT</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
-
-    <!-- ABOUT HEADER -->
-    <section class="page-header">
-        <h1>ABOUT ME</h1>
-        <p class="page-subtitle">SOC Analyst • Threat Hunter • Blue Team Specialist</p>
-    </section>
-
-    <!-- ABOUT CONTENT -->
-    <section class="about-section">
-        <div class="about-grid">
-
-            <!-- LEFT COLUMN -->
-            <div class="about-text">
-                <h2>Defending the Digital Frontier</h2>
-
-                <p>
-                    I am a cybersecurity professional specializing in 
-                    <strong>threat detection, incident response, and defensive architecture</strong>.  
-                    My work focuses on identifying adversarial behaviors, mitigating attacks, and strengthening 
-                    systems against modern cyber threats.
-                </p>
-
-                <p>
-                    With hands-on experience across SIEM monitoring, forensic triage, malware analysis, 
-                    and vulnerability management, I aim to bring resilience and operational excellence 
-                    to every environment I protect.
-                </p>
-
-                <h3>Core Focus Areas</h3>
-                <ul class="bullet-list">
-                    <li>Security Operations & Threat Monitoring</li>
-                    <li>Digital Forensics & Investigation</li>
-                    <li>Malware Analysis & Reverse Engineering</li>
-                    <li>Threat Intelligence & IOC Enrichment</li>
-                    <li>Vulnerability Assessment & Hardening</li>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-bracket">[</span>CyberDefender<span class="logo-bracket">]</span>
+            </a>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-
-            <!-- RIGHT COLUMN -->
-            <div class="about-stats">
-                <div class="stat-card">
-                    <h4>THREAT LEVEL</h4>
-                    <p class="stat-value">ELEVATED</p>
-                </div>
-
-                <div class="stat-card">
-                    <h4>SYSTEM UPTIME</h4>
-                    <p class="stat-value">99.999%</p>
-                </div>
-
-                <div class="stat-card">
-                    <h4>MISSIONS COMPLETED</h4>
-                    <p class="stat-value">250+</p>
-                </div>
-
-                <div class="stat-card">
-                    <h4>INCIDENTS RESOLVED</h4>
-                    <p class="stat-value">185+</p>
-                </div>
-            </div>
-
         </div>
-    </section>
+    </header>
 
-    <!-- FOOTER -->
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <p class="breadcrumb"><a href="index.html">~/home</a> / about</p>
+                <h1>About Me</h1>
+                <p>The story behind the security professional</p>
+            </div>
+        </div>
+
+        <section class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <div class="about-image-container">
+                            <div class="about-image-inner">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <h2>Defending the Digital Frontier</h2>
+                        <p>I'm a dedicated Security Operations Center (SOC) Analyst with a passion for protecting organizations from evolving cyber threats. With extensive experience in blue team operations, I specialize in threat detection, incident response, and security monitoring.</p>
+                        <p>My journey into cybersecurity began with a fascination for understanding how systems work and how they can be defended. This curiosity led me to develop deep expertise in SIEM platforms, endpoint detection and response, and threat intelligence.</p>
+                        <p>Every day, I analyze security events, hunt for threats, and respond to incidents to ensure that organizations remain protected against sophisticated adversaries. I believe in continuous learning and staying ahead of the threat landscape.</p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Incidents Handled</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">99.9%</div>
+                                <div class="stat-label">Detection Rate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--surface);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Certifications</h2>
+                    <p>Professional certifications validating my expertise in cybersecurity</p>
+                </div>
+                <div class="certifications-grid">
+                    <div class="cert-badge">
+                        <div class="cert-badge-icon"><i class="fas fa-award"></i></div>
+                        <div class="cert-badge-name">CompTIA Security+</div>
+                    </div>
+                    <div class="cert-badge">
+                        <div class="cert-badge-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="cert-badge-name">CompTIA CySA+</div>
+                    </div>
+                    <div class="cert-badge">
+                        <div class="cert-badge-icon"><i class="fas fa-shield-halved"></i></div>
+                        <div class="cert-badge-name">Splunk Core Certified</div>
+                    </div>
+                    <div class="cert-badge">
+                        <div class="cert-badge-icon"><i class="fas fa-user-secret"></i></div>
+                        <div class="cert-badge-name">BTL1 (Blue Team Level 1)</div>
+                    </div>
+                    <div class="cert-badge">
+                        <div class="cert-badge-icon"><i class="fas fa-cloud"></i></div>
+                        <div class="cert-badge-name">Microsoft SC-200</div>
+                    </div>
+                    <div class="cert-badge">
+                        <div class="cert-badge-icon"><i class="fas fa-network-wired"></i></div>
+                        <div class="cert-badge-name">CompTIA Network+</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Career Journey</h2>
+                    <p>My professional evolution in the cybersecurity landscape</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Senior SOC Analyst</h3>
+                            <p>Leading threat hunting initiatives, developing detection rules, and mentoring junior analysts. Responsible for handling critical security incidents and improving SOC processes.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021 - 2023</div>
+                        <div class="timeline-content">
+                            <h3>SOC Analyst Tier 2</h3>
+                            <p>Advanced incident investigation, malware analysis, and threat intelligence integration. Developed custom SIEM correlation rules and automated response playbooks.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2019 - 2021</div>
+                        <div class="timeline-content">
+                            <h3>SOC Analyst Tier 1</h3>
+                            <p>Real-time security monitoring, initial incident triage, and alert investigation. Built foundational skills in log analysis and security tool operation.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2018 - 2019</div>
+                        <div class="timeline-content">
+                            <h3>IT Support Specialist</h3>
+                            <p>Started career in IT with a focus on system administration and network troubleshooting. Developed interest in security through exposure to security incidents.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--surface);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Core Values</h2>
+                    <p>The principles that guide my work in cybersecurity</p>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Vigilance</h3>
+                        <p>Maintaining constant awareness of the threat landscape and staying alert to potential security risks at all times.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Continuous Learning</h3>
+                        <p>Committed to ongoing education and skill development to stay ahead of evolving threats and technologies.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Collaboration</h3>
+                        <p>Working effectively with teams across organizations to build a unified defense against cyber threats.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <h3>Integrity</h3>
+                        <p>Upholding ethical standards and responsible practices in all security operations and investigations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>© 2025 SEC_OPS. All Systems Secure.</p>
-        <div class="footer-links">
-            <a href="#">GITHUB</a>
-            <a href="#">LINKEDIN</a>
-            <a href="#">PGP KEY</a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">[CyberDefender]</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CyberDefender. All rights reserved. | Securing the digital frontier</p>
+            </div>
         </div>
     </footer>
 
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
