@@ -3,79 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | SEC_OPS Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Get in touch for cybersecurity consulting, SOC services, or collaboration opportunities.">
+    <title>Contact | CyberDefender - Get In Touch</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">SEC_OPS</div>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="portfolio.html">PORTFOLIO</a></li>
-            <li><a class="active" href="contact.html">CONTACT</a></li>
-        </ul>
-    </nav>
-
-    <!-- CONTACT HEADER -->
-    <section class="page-header">
-        <h1>INITIATE CONTACT</h1>
-        <p>Reach out securely for incident response support, blue team operations, collaboration, or opportunities.</p>
-    </section>
-
-    <!-- CONTACT FORM -->
-    <section class="contact-section">
-        <div class="contact-box">
-
-            <h2>Secure Message Form</h2>
-            <p class="contact-subtext">Your message will be transmitted over encrypted channels.</p>
-
-            <form class="contact-form" action="#" method="POST">
-
-                <label for="name">FULL NAME</label>
-                <input type="text" id="name" name="name" placeholder="Type your name" required>
-
-                <label for="email">EMAIL ADDRESS</label>
-                <input type="email" id="email" name="email" placeholder="example@domain.com" required>
-
-                <label for="subject">SUBJECT</label>
-                <input type="text" id="subject" name="subject" placeholder="Message subject" required>
-
-                <label for="message">MESSAGE</label>
-                <textarea id="message" name="message" rows="6" placeholder="Type your message here…" required></textarea>
-
-                <button type="submit" class="btn">SEND SECURE MESSAGE</button>
-            </form>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-bracket">[</span>CyberDefender<span class="logo-bracket">]</span>
+            </a>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+    </header>
 
-        <!-- CONTACT DETAILS -->
-        <div class="contact-details">
-            <h2>Direct Channels</h2>
-            <p>Email: <span class="highlight">yourmail@domain.com</span></p>
-            <p>GitHub: <span class="highlight">github.com/yourusername</span></p>
-            <p>LinkedIn: <span class="highlight">linkedin.com/in/yourprofile</span></p>
-            <p>PGP Key: <span class="highlight">Available on request</span></p>
-
-            <div class="pgp-box">
-                <p><strong>PGP Fingerprint:</strong><br>
-                <span class="highlight">XXXX XXXX XXXX XXXX XXXX XXXX XXXX XXXX</span></p>
+    <main>
+        <div class="page-header">
+            <div class="container">
+                <p class="breadcrumb"><a href="index.html">~/home</a> / contact</p>
+                <h1>Get In Touch</h1>
+                <p>Let's discuss how I can help secure your organization</p>
             </div>
         </div>
 
-    </section>
+        <section class="section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h2>Let's Connect</h2>
+                        <p>Whether you're looking for SOC consulting, security assessment services, or just want to discuss the latest in cybersecurity, I'd love to hear from you. Feel free to reach out through any of the channels below or use the contact form.</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-method-text">
+                                    <span>Email</span>
+                                    <strong>contact@cyberdefender.com</strong>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-method-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                                <div class="contact-method-text">
+                                    <span>LinkedIn</span>
+                                    <strong>linkedin.com/in/cyberdefender</strong>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-method-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="contact-method-text">
+                                    <span>GitHub</span>
+                                    <strong>github.com/cyberdefender</strong>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-method-text">
+                                    <span>Location</span>
+                                    <strong>Available for Remote Work Worldwide</strong>
+                                </div>
+                            </div>
+                        </div>
 
-    <!-- FOOTER -->
+                        <div style="margin-top: 2rem;">
+                            <h3 style="margin-bottom: 1rem; color: var(--primary); font-family: 'JetBrains Mono', monospace;">// Available For</h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag">SOC Consulting</span>
+                                <span class="skill-tag">Security Assessments</span>
+                                <span class="skill-tag">IR Planning</span>
+                                <span class="skill-tag">SIEM Implementation</span>
+                                <span class="skill-tag">Detection Engineering</span>
+                                <span class="skill-tag">Security Training</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form id="contactForm" onsubmit="handleSubmit(event)">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" id="company" name="company" placeholder="Your Organization">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" placeholder="How can I help?" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" placeholder="Tell me about your security needs..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                        <div id="formMessage" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 6px; text-align: center;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background: var(--surface);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Response Time</h2>
+                    <p>What to expect when you reach out</p>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3>Quick Response</h3>
+                        <p>I typically respond to inquiries within 24-48 hours during business days.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <h3>Initial Consultation</h3>
+                        <p>Free 30-minute call to discuss your security needs and how I can help.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3>Detailed Proposal</h3>
+                        <p>Custom proposals provided within 3-5 business days after consultation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>© 2025 SEC_OPS. All Systems Secure.</p>
-        <div class="footer-links">
-            <a href="#">GITHUB</a>
-            <a href="#">LINKEDIN</a>
-            <a href="#">PGP KEY</a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">[CyberDefender]</div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CyberDefender. All rights reserved. | Securing the digital frontier</p>
+            </div>
         </div>
     </footer>
 
+    <script>
+        function toggleMenu() {
+            document.getElementById('nav-menu').classList.toggle('active');
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const form = document.getElementById('contactForm');
+            const formMessage = document.getElementById('formMessage');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+            
+            if (!name || !email || !subject || !message) {
+                formMessage.style.display = 'block';
+                formMessage.style.background = 'rgba(248, 81, 73, 0.1)';
+                formMessage.style.border = '1px solid var(--warning)';
+                formMessage.style.color = 'var(--warning)';
+                formMessage.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Please fill in all required fields.';
+                return;
+            }
+            
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                formMessage.style.display = 'block';
+                formMessage.style.background = 'rgba(248, 81, 73, 0.1)';
+                formMessage.style.border = '1px solid var(--warning)';
+                formMessage.style.color = 'var(--warning)';
+                formMessage.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Please enter a valid email address.';
+                return;
+            }
+            
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            
+            setTimeout(() => {
+                formMessage.style.display = 'block';
+                formMessage.style.background = 'rgba(0, 255, 65, 0.1)';
+                formMessage.style.border = '1px solid var(--primary)';
+                formMessage.style.color = 'var(--primary)';
+                formMessage.innerHTML = '<i class="fas fa-check-circle"></i> Message sent successfully! I\'ll get back to you soon.';
+                
+                form.reset();
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+            }, 1500);
+        }
+    </script>
 </body>
 </html>
